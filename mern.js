@@ -46,37 +46,5 @@
     
 // }
 
-let student = {
-    name: "Mama",
-    class: "1",
-    marks: {
-        math: 95,
-        science: 90,
-        english: 85
-    }
-}
-
-for (let marks in student.marks) {
-    console.log(`Subject: ${student.marks[marks].subject}, Score: ${student.marks[marks].score}`);
-}
-
-
-let totalscore = 0;
-let studentnumber = 0
-
-for (let marks in student.marks) {
-    totalscore = student.marks[marks] + totalscore;
-    studentnumber++;
-}
-console.log("Total score: " + totalscore);
-
-let average = totalscore / studentnumber;
-console.log("Average score: " + average);
-
-if (average >= 40) {
-    console.log("You are passed")
-} else {
-    console.log("Fail")
-}
 
 
